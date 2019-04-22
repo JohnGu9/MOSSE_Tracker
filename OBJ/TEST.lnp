@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"..\obj\startup_stm32f40_41xxx.o"
+"..\obj\test.o"
+"..\obj\delay.o"
+"..\obj\sys.o"
+"..\obj\usart.o"
+"..\obj\led.o"
+"..\obj\ili93xx.o"
+"..\obj\key.o"
+"..\obj\dcmi.o"
+"..\obj\ov2640.o"
+"..\obj\sccb.o"
+"..\obj\usart2.o"
+"..\obj\timer.o"
+"..\obj\sram.o"
+"..\obj\usmart.o"
+"..\obj\usmart_config.o"
+"..\obj\usmart_str.o"
+"..\DSP_LIB\arm_cortexM4lf_math.lib"
+"..\obj\math_helper.o"
+"..\obj\mytrack.o"
+"..\obj\malloc.o"
+--strict --scatter "..\OBJ\TEST.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\OBJ\TEST.map" -o ..\OBJ\TEST.axf

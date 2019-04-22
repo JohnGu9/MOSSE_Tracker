@@ -1,0 +1,17 @@
+..\obj\ov2640.o: ..\HARDWARE\OV2640\ov2640.c
+..\obj\ov2640.o: ..\SYSTEM\sys\sys.h
+..\obj\ov2640.o: ..\SYSTEM\sys\stm32f4xx.h
+..\obj\ov2640.o: ..\SYSTEM\sys\core_cm4.h
+..\obj\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ov2640.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\ov2640.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\ov2640.o: ..\SYSTEM\sys\core_cm4_simd.h
+..\obj\ov2640.o: ..\SYSTEM\sys\system_stm32f4xx.h
+..\obj\ov2640.o: ..\HARDWARE\OV2640\ov2640.h
+..\obj\ov2640.o: ..\HARDWARE\OV2640\sccb.h
+..\obj\ov2640.o: ..\HARDWARE\OV2640\ov2640cfg.h
+..\obj\ov2640.o: ..\HARDWARE\TIMER\timer.h
+..\obj\ov2640.o: ..\SYSTEM\delay\delay.h
+..\obj\ov2640.o: ..\SYSTEM\usart\usart.h
+..\obj\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\ov2640.o: ..\HARDWARE\EXTI\exti.h

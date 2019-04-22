@@ -1,0 +1,10 @@
+..\obj\math_helper.o: ..\DSP_LIB\math_helper.c
+..\obj\math_helper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+..\obj\math_helper.o: ..\DSP_LIB\math_helper.h
+..\obj\math_helper.o: ..\DSP_LIB\Include\arm_math.h
+..\obj\math_helper.o: ..\DSP_LIB\Include\core_cm4.h
+..\obj\math_helper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\math_helper.o: ..\SYSTEM\sys\core_cmInstr.h
+..\obj\math_helper.o: ..\SYSTEM\sys\core_cmFunc.h
+..\obj\math_helper.o: ..\SYSTEM\sys\core_cm4_simd.h
+..\obj\math_helper.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
