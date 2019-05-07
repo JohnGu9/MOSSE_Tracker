@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\TEST.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\TEST.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Fri Apr 19 23:06:46 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue May 07 10:21:50 2019
 <BR><P>
 <H3>Maximum Stack Usage =        360 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -46,9 +46,9 @@ Function Pointers
  <LI><a href="#[6f]">CAN2_SCE_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[6c]">CAN2_TX_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[7c]">CRYP_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
- <LI><a href="#[8]">DCMI_CR_Set</a> from dcmi.o(i.DCMI_CR_Set) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[10]">DCMI_CR_Set</a> from dcmi.o(i.DCMI_CR_Set) referenced 2 times from usmart_config.o(.data)
  <LI><a href="#[7b]">DCMI_IRQHandler</a> from dcmi.o(i.DCMI_IRQHandler) referenced from startup_stm32f40_41xxx.o(RESET)
- <LI><a href="#[9]">DCMI_Set_Window</a> from dcmi.o(i.DCMI_Set_Window) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[11]">DCMI_Set_Window</a> from dcmi.o(i.DCMI_Set_Window) referenced 2 times from usmart_config.o(.data)
  <LI><a href="#[38]">DMA1_Stream0_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[39]">DMA1_Stream1_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[3a]">DMA1_Stream2_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
@@ -94,27 +94,27 @@ Function Pointers
  <LI><a href="#[77]">OTG_HS_EP1_OUT_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[7a]">OTG_HS_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[79]">OTG_HS_WKUP_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
- <LI><a href="#[a]">OV2640_Auto_Exposure</a> from ov2640.o(i.OV2640_Auto_Exposure) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[d]">OV2640_Brightness</a> from ov2640.o(i.OV2640_Brightness) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[10]">OV2640_Color_Bar</a> from ov2640.o(i.OV2640_Color_Bar) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[c]">OV2640_Color_Saturation</a> from ov2640.o(i.OV2640_Color_Saturation) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[e]">OV2640_Contrast</a> from ov2640.o(i.OV2640_Contrast) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[14]">OV2640_ImageSize_Set</a> from ov2640.o(i.OV2640_ImageSize_Set) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[13]">OV2640_ImageWin_Set</a> from ov2640.o(i.OV2640_ImageWin_Set) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[15]">OV2640_JPEG_Mode</a> from ov2640.o(i.OV2640_JPEG_Mode) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[b]">OV2640_Light_Mode</a> from ov2640.o(i.OV2640_Light_Mode) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[12]">OV2640_OutSize_Set</a> from ov2640.o(i.OV2640_OutSize_Set) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[16]">OV2640_RGB565_Mode</a> from ov2640.o(i.OV2640_RGB565_Mode) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[f]">OV2640_Special_Effects</a> from ov2640.o(i.OV2640_Special_Effects) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[11]">OV2640_Window_Set</a> from ov2640.o(i.OV2640_Window_Set) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[12]">OV2640_Auto_Exposure</a> from ov2640.o(i.OV2640_Auto_Exposure) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[15]">OV2640_Brightness</a> from ov2640.o(i.OV2640_Brightness) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[18]">OV2640_Color_Bar</a> from ov2640.o(i.OV2640_Color_Bar) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[14]">OV2640_Color_Saturation</a> from ov2640.o(i.OV2640_Color_Saturation) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[16]">OV2640_Contrast</a> from ov2640.o(i.OV2640_Contrast) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[1c]">OV2640_ImageSize_Set</a> from ov2640.o(i.OV2640_ImageSize_Set) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[1b]">OV2640_ImageWin_Set</a> from ov2640.o(i.OV2640_ImageWin_Set) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[1d]">OV2640_JPEG_Mode</a> from ov2640.o(i.OV2640_JPEG_Mode) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[13]">OV2640_Light_Mode</a> from ov2640.o(i.OV2640_Light_Mode) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[1a]">OV2640_OutSize_Set</a> from ov2640.o(i.OV2640_OutSize_Set) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[1e]">OV2640_RGB565_Mode</a> from ov2640.o(i.OV2640_RGB565_Mode) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[17]">OV2640_Special_Effects</a> from ov2640.o(i.OV2640_Special_Effects) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[19]">OV2640_Window_Set</a> from ov2640.o(i.OV2640_Window_Set) referenced 2 times from usmart_config.o(.data)
  <LI><a href="#[2e]">PVD_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[2b]">PendSV_Handler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[32]">RCC_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[56]">RTC_Alarm_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[30]">RTC_WKUP_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[23]">Reset_Handler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
- <LI><a href="#[7]">SCCB_RD_Reg</a> from sccb.o(i.SCCB_RD_Reg) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[6]">SCCB_WR_Reg</a> from sccb.o(i.SCCB_WR_Reg) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[f]">SCCB_RD_Reg</a> from sccb.o(i.SCCB_RD_Reg) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[e]">SCCB_WR_Reg</a> from sccb.o(i.SCCB_WR_Reg) referenced 2 times from usmart_config.o(.data)
  <LI><a href="#[5e]">SDIO_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[50]">SPI1_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[51]">SPI2_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
@@ -146,23 +146,23 @@ Function Pointers
  <LI><a href="#[2d]">WWDG_IRQHandler</a> from startup_stm32f40_41xxx.o(.text) referenced from startup_stm32f40_41xxx.o(RESET)
  <LI><a href="#[82]">__main</a> from __main.o(!!!main) referenced from startup_stm32f40_41xxx.o(.text)
  <LI><a href="#[81]">_printf_input_char</a> from _printf_char_common.o(.text) referenced from _printf_char_common.o(.text)
- <LI><a href="#[4]">delay_ms</a> from delay.o(i.delay_ms) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[5]">delay_us</a> from delay.o(i.delay_us) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[c]">delay_ms</a> from delay.o(i.delay_ms) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[d]">delay_us</a> from delay.o(i.delay_us) referenced 2 times from usmart_config.o(.data)
  <LI><a href="#[80]">fputc</a> from usart.o(i.fputc) referenced from _printf_char_file.o(.text)
- <LI><a href="#[1b]">gen_hamming_win</a> from mytrack.o(i.gen_hamming_win) referenced 2 times from mytrack.o(.data)
- <LI><a href="#[1f]">myTrack</a> from mytrack.o(i.myTrack) referenced 2 times from mytrack.o(.data)
- <LI><a href="#[1d]">myTrack_General_init</a> from mytrack.o(i.myTrack_General_init) referenced 2 times from mytrack.o(.data)
- <LI><a href="#[1e]">myTrack_Rectreset</a> from mytrack.o(i.myTrack_Rectreset) referenced 2 times from mytrack.o(.data)
- <LI><a href="#[20]">myTrack_training</a> from mytrack.o(i.myTrack_training) referenced 2 times from mytrack.o(.data)
- <LI><a href="#[21]">my_mem_init</a> from malloc.o(i.my_mem_init) referenced 2 times from malloc.o(.data)
- <LI><a href="#[22]">my_mem_perused</a> from malloc.o(i.my_mem_perused) referenced 2 times from malloc.o(.data)
- <LI><a href="#[2]">read_addr</a> from usmart.o(i.read_addr) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[1c]">rgbpreprocess</a> from mytrack.o(i.rgbpreprocess) referenced 2 times from mytrack.o(.data)
- <LI><a href="#[18]">usmart_cmd_rec</a> from usmart.o(i.usmart_cmd_rec) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[19]">usmart_exe</a> from usmart.o(i.usmart_exe) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[17]">usmart_init</a> from usmart.o(i.usmart_init) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[1a]">usmart_scan</a> from usmart.o(i.usmart_scan) referenced 2 times from usmart_config.o(.data)
- <LI><a href="#[3]">write_addr</a> from usmart.o(i.write_addr) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[4]">gen_hamming_win</a> from mytrack.o(i.gen_hamming_win) referenced 2 times from mytrack.o(.data)
+ <LI><a href="#[8]">myTrack</a> from mytrack.o(i.myTrack) referenced 2 times from mytrack.o(.data)
+ <LI><a href="#[6]">myTrack_General_init</a> from mytrack.o(i.myTrack_General_init) referenced 2 times from mytrack.o(.data)
+ <LI><a href="#[7]">myTrack_Rectreset</a> from mytrack.o(i.myTrack_Rectreset) referenced 2 times from mytrack.o(.data)
+ <LI><a href="#[9]">myTrack_training</a> from mytrack.o(i.myTrack_training) referenced 2 times from mytrack.o(.data)
+ <LI><a href="#[2]">my_mem_init</a> from malloc.o(i.my_mem_init) referenced 2 times from malloc.o(.data)
+ <LI><a href="#[3]">my_mem_perused</a> from malloc.o(i.my_mem_perused) referenced 2 times from malloc.o(.data)
+ <LI><a href="#[a]">read_addr</a> from usmart.o(i.read_addr) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[5]">rgbpreprocess</a> from mytrack.o(i.rgbpreprocess) referenced 2 times from mytrack.o(.data)
+ <LI><a href="#[20]">usmart_cmd_rec</a> from usmart.o(i.usmart_cmd_rec) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[21]">usmart_exe</a> from usmart.o(i.usmart_exe) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[1f]">usmart_init</a> from usmart.o(i.usmart_init) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[22]">usmart_scan</a> from usmart.o(i.usmart_scan) referenced 2 times from usmart_config.o(.data)
+ <LI><a href="#[b]">write_addr</a> from usmart.o(i.write_addr) referenced 2 times from usmart_config.o(.data)
 </UL>
 <P>
 <H3>
@@ -646,16 +646,16 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[e2]"></a>arm_cos_f32</STRONG> (Thumb, 194 bytes, Stack size 0 bytes, arm_cos_f32.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gen_hamming_win
+<BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gen_hamming_win
 </UL>
 
 <P><STRONG><a name="[f0]"></a>arm_cmplx_conj_f32</STRONG> (Thumb, 226 bytes, Stack size 0 bytes, arm_cmplx_conj_f32.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
+<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
 </UL>
 
 <P><STRONG><a name="[e9]"></a>arm_cmplx_mult_cmplx_f32</STRONG> (Thumb, 234 bytes, Stack size 0 bytes, arm_cmplx_mult_cmplx_f32.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
 <P><STRONG><a name="[9d]"></a>arm_radix2_butterfly_f32</STRONG> (Thumb, 340 bytes, Stack size 32 bytes, arm_cfft_radix2_f32.o(.text))
@@ -677,26 +677,26 @@ Global Symbols
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_radix2_butterfly_inverse_f32
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_radix2_butterfly_f32
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fft2
 </UL>
 
 <P><STRONG><a name="[ec]"></a>arm_cfft_radix2_init_f32</STRONG> (Thumb, 230 bytes, Stack size 4 bytes, arm_cfft_radix2_init_f32.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = arm_cfft_radix2_init_f32
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
 </UL>
 
 <P><STRONG><a name="[ea]"></a>arm_mean_f32</STRONG> (Thumb, 172 bytes, Stack size 8 bytes, arm_mean_f32.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = arm_mean_f32
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rgbpreprocess
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rgbpreprocess
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
 <P><STRONG><a name="[eb]"></a>arm_std_f32</STRONG> (Thumb, 250 bytes, Stack size 0 bytes, arm_std_f32.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rgbpreprocess
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR><BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rgbpreprocess
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
 <P><STRONG><a name="[9e]"></a>arm_bitreversal_f32</STRONG> (Thumb, 178 bytes, Stack size 20 bytes, arm_bitreversal.o(.text))
@@ -720,9 +720,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Init
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
-<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
-<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
-<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
+<LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
 </UL>
 
 <P><STRONG><a name="[a3]"></a>_printf_pre_padding</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, _printf_pad.o(.text))
@@ -890,7 +889,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[8]"></a>DCMI_CR_Set</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, dcmi.o(i.DCMI_CR_Set))
+<P><STRONG><a name="[10]"></a>DCMI_CR_Set</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, dcmi.o(i.DCMI_CR_Set))
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
 <P><STRONG><a name="[e6]"></a>DCMI_DMA_Init</STRONG> (Thumb, 178 bytes, Stack size 8 bytes, dcmi.o(i.DCMI_DMA_Init))
@@ -918,7 +917,7 @@ Global Symbols
 
 <P><STRONG><a name="[e8]"></a>DCMI_Pause</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, dcmi.o(i.DCMI_Pause))
 <BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
 <P><STRONG><a name="[b7]"></a>DCMI_Restart</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, dcmi.o(i.DCMI_Restart))
@@ -928,16 +927,16 @@ Global Symbols
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
-<P><STRONG><a name="[9]"></a>DCMI_Set_Window</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, dcmi.o(i.DCMI_Set_Window))
+<P><STRONG><a name="[11]"></a>DCMI_Set_Window</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, dcmi.o(i.DCMI_Set_Window))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = DCMI_Set_Window &rArr; LCD_Set_Window &rArr; LCD_SetCursor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteRAM_Prepare
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Set_Window
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
-<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_OutSize_Set
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_OutSize_Set
 <LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
@@ -995,7 +994,7 @@ Global Symbols
 <P><STRONG><a name="[bf]"></a>KEY_Scan</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, key.o(i.KEY_Scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = KEY_Scan &rArr; delay_ms
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1005,7 +1004,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1052,8 +1051,8 @@ Global Symbols
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Display_Dir
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Set
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_AF_Set
-<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
-<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -1077,7 +1076,7 @@ Global Symbols
 <P><STRONG><a name="[b8]"></a>LCD_SetCursor</STRONG> (Thumb, 906 bytes, Stack size 40 bytes, ili93xx.o(i.LCD_SetCursor))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LCD_SetCursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Set_Window
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ReadPoint
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
@@ -1092,7 +1091,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_SetCursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
 </UL>
 
 <P><STRONG><a name="[ca]"></a>LCD_ShowChar</STRONG> (Thumb, 272 bytes, Stack size 88 bytes, ili93xx.o(i.LCD_ShowChar))
@@ -1109,11 +1108,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowChar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
 </UL>
 
 <P><STRONG><a name="[b9]"></a>LCD_WriteRAM_Prepare</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, ili93xx.o(i.LCD_WriteRAM_Prepare))
-<BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
+<BR><BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Start
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Restart
 </UL>
@@ -1131,58 +1130,58 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Init
-<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_init
+<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_init
 </UL>
 
-<P><STRONG><a name="[a]"></a>OV2640_Auto_Exposure</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Auto_Exposure))
+<P><STRONG><a name="[12]"></a>OV2640_Auto_Exposure</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Auto_Exposure))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_Auto_Exposure &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[d]"></a>OV2640_Brightness</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, ov2640.o(i.OV2640_Brightness))
+<P><STRONG><a name="[15]"></a>OV2640_Brightness</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, ov2640.o(i.OV2640_Brightness))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = OV2640_Brightness &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[10]"></a>OV2640_Color_Bar</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ov2640.o(i.OV2640_Color_Bar))
+<P><STRONG><a name="[18]"></a>OV2640_Color_Bar</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, ov2640.o(i.OV2640_Color_Bar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = OV2640_Color_Bar &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
-<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[c]"></a>OV2640_Color_Saturation</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, ov2640.o(i.OV2640_Color_Saturation))
+<P><STRONG><a name="[14]"></a>OV2640_Color_Saturation</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, ov2640.o(i.OV2640_Color_Saturation))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = OV2640_Color_Saturation &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[e]"></a>OV2640_Contrast</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Contrast))
+<P><STRONG><a name="[16]"></a>OV2640_Contrast</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Contrast))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_Contrast &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[14]"></a>OV2640_ImageSize_Set</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_ImageSize_Set))
+<P><STRONG><a name="[1c]"></a>OV2640_ImageSize_Set</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_ImageSize_Set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_ImageSize_Set &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[13]"></a>OV2640_ImageWin_Set</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, ov2640.o(i.OV2640_ImageWin_Set))
+<P><STRONG><a name="[1b]"></a>OV2640_ImageWin_Set</STRONG> (Thumb, 144 bytes, Stack size 24 bytes, ov2640.o(i.OV2640_ImageWin_Set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OV2640_ImageWin_Set &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1193,60 +1192,60 @@ Global Symbols
 <LI>Call Chain = OV2640_Init &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Set
-<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
-<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_Init
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[15]"></a>OV2640_JPEG_Mode</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_JPEG_Mode))
+<P><STRONG><a name="[1d]"></a>OV2640_JPEG_Mode</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_JPEG_Mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_JPEG_Mode &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[b]"></a>OV2640_Light_Mode</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Light_Mode))
+<P><STRONG><a name="[13]"></a>OV2640_Light_Mode</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Light_Mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_Light_Mode &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[12]"></a>OV2640_OutSize_Set</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_OutSize_Set))
+<P><STRONG><a name="[1a]"></a>OV2640_OutSize_Set</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_OutSize_Set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_OutSize_Set &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
+<BR>[Called By]<UL><LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Set_Window
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[16]"></a>OV2640_RGB565_Mode</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_RGB565_Mode))
+<P><STRONG><a name="[1e]"></a>OV2640_RGB565_Mode</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_RGB565_Mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_RGB565_Mode &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[f]"></a>OV2640_Special_Effects</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Special_Effects))
+<P><STRONG><a name="[17]"></a>OV2640_Special_Effects</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, ov2640.o(i.OV2640_Special_Effects))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = OV2640_Special_Effects &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[11]"></a>OV2640_Window_Set</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, ov2640.o(i.OV2640_Window_Set))
+<P><STRONG><a name="[19]"></a>OV2640_Window_Set</STRONG> (Thumb, 124 bytes, Stack size 24 bytes, ov2640.o(i.OV2640_Window_Set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OV2640_Window_Set &rArr; SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
-<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+<BR>[Calls]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
@@ -1258,47 +1257,47 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Init
 </UL>
 
-<P><STRONG><a name="[7]"></a>SCCB_RD_Reg</STRONG> (Thumb, 314 bytes, Stack size 32 bytes, sccb.o(i.SCCB_RD_Reg))
+<P><STRONG><a name="[f]"></a>SCCB_RD_Reg</STRONG> (Thumb, 314 bytes, Stack size 32 bytes, sccb.o(i.SCCB_RD_Reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SCCB_RD_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Init
-<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Window_Set
-<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Color_Bar
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Window_Set
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Color_Bar
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
 <P><STRONG><a name="[cf]"></a>SCCB_WR_Byte</STRONG> (Thumb, 126 bytes, Stack size 24 bytes, sccb.o(i.SCCB_WR_Byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
-<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+<BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
 </UL>
 
-<P><STRONG><a name="[6]"></a>SCCB_WR_Reg</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, sccb.o(i.SCCB_WR_Reg))
+<P><STRONG><a name="[e]"></a>SCCB_WR_Reg</STRONG> (Thumb, 128 bytes, Stack size 32 bytes, sccb.o(i.SCCB_WR_Reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = SCCB_WR_Reg &rArr; SCCB_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<BR>[Calls]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_RGB565_Mode
-<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_OutSize_Set
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_RGB565_Mode
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_OutSize_Set
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Init
-<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_ImageWin_Set
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Contrast
-<LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Window_Set
-<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Special_Effects
-<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Light_Mode
-<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_JPEG_Mode
-<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_ImageSize_Set
-<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Color_Saturation
-<LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Color_Bar
-<LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Brightness
-<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Auto_Exposure
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_ImageWin_Set
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Contrast
+<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Window_Set
+<LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Special_Effects
+<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Light_Mode
+<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_JPEG_Mode
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_ImageSize_Set
+<LI><a href="#[14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Color_Saturation
+<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Color_Bar
+<LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Brightness
+<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Auto_Exposure
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
@@ -1316,12 +1315,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Stm32_Clock_Init
 </UL>
 
-<P><STRONG><a name="[4a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, timer.o(i.TIM3_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
-<LI>Call Chain = TIM3_IRQHandler &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
-</UL>
+<P><STRONG><a name="[4a]"></a>TIM3_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, timer.o(i.TIM3_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f40_41xxx.o(RESET)
 </UL>
 <P><STRONG><a name="[4b]"></a>TIM4_IRQHandler</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, usmart.o(i.TIM4_IRQHandler))
@@ -1368,7 +1362,7 @@ Global Symbols
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
 </UL>
 
 <P><STRONG><a name="[de]"></a>__kernel_poly</STRONG> (Thumb, 248 bytes, Stack size 24 bytes, poly.o(i.__kernel_poly))
@@ -1416,7 +1410,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[4]"></a>delay_ms</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, delay.o(i.delay_ms))
+<P><STRONG><a name="[c]"></a>delay_ms</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, delay.o(i.delay_ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = delay_ms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Init
@@ -1426,18 +1420,18 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[5]"></a>delay_us</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, delay.o(i.delay_us))
+<P><STRONG><a name="[d]"></a>delay_us</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, delay.o(i.delay_us))
 <BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Byte
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
-<LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
+<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_WR_Reg
+<LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SCCB_RD_Reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
 <P><STRONG><a name="[80]"></a>fputc</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, usart.o(i.fputc))
 <BR>[Address Reference Count : 1]<UL><LI> _printf_char_file.o(.text)
 </UL>
-<P><STRONG><a name="[1b]"></a>gen_hamming_win</STRONG> (Thumb, 172 bytes, Stack size 64 bytes, mytrack.o(i.gen_hamming_win))
+<P><STRONG><a name="[4]"></a>gen_hamming_win</STRONG> (Thumb, 172 bytes, Stack size 64 bytes, mytrack.o(i.gen_hamming_win))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = gen_hamming_win
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cos_f32
@@ -1448,20 +1442,20 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_IRQHandler
 </UL>
 
-<P><STRONG><a name="[96]"></a>main</STRONG> (Thumb, 1292 bytes, Stack size 16 bytes, test.o(i.main))
+<P><STRONG><a name="[96]"></a>main</STRONG> (Thumb, 1014 bytes, Stack size 16 bytes, test.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
 <LI>Call Chain = main &rArr; LCD_Init &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_init
-<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_init
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Stm32_Clock_Init
-<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_RGB565_Mode
-<LI><a href="#[12]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_OutSize_Set
+<LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_RGB565_Mode
+<LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_OutSize_Set
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Init
-<LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_ImageWin_Set
-<LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Contrast
+<LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_ImageWin_Set
+<LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OV2640_Contrast
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_Init
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
@@ -1482,7 +1476,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[21]"></a>my_mem_init</STRONG> (Thumb, 94 bytes, Stack size 4 bytes, malloc.o(i.my_mem_init))
+<P><STRONG><a name="[2]"></a>my_mem_init</STRONG> (Thumb, 94 bytes, Stack size 4 bytes, malloc.o(i.my_mem_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = my_mem_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1495,7 +1489,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
 </UL>
 
-<P><STRONG><a name="[22]"></a>my_mem_perused</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, malloc.o(i.my_mem_perused))
+<P><STRONG><a name="[3]"></a>my_mem_perused</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, malloc.o(i.my_mem_perused))
 <BR>[Address Reference Count : 1]<UL><LI> malloc.o(.data)
 </UL>
 <P><STRONG><a name="[ed]"></a>mymalloc</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, malloc.o(i.mymalloc))
@@ -1503,10 +1497,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;my_mem_malloc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
 </UL>
 
-<P><STRONG><a name="[2]"></a>read_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, usmart.o(i.read_addr))
+<P><STRONG><a name="[a]"></a>read_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, usmart.o(i.read_addr))
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
 <P><STRONG><a name="[e5]"></a>uart_init</STRONG> (Thumb, 202 bytes, Stack size 24 bytes, usart.o(i.uart_init))
@@ -1519,7 +1513,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[18]"></a>usmart_cmd_rec</STRONG> (Thumb, 172 bytes, Stack size 104 bytes, usmart.o(i.usmart_cmd_rec))
+<P><STRONG><a name="[20]"></a>usmart_cmd_rec</STRONG> (Thumb, 172 bytes, Stack size 104 bytes, usmart.o(i.usmart_cmd_rec))
 <BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = usmart_cmd_rec &rArr; usmart_get_fparam
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
@@ -1528,7 +1522,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[19]"></a>usmart_exe</STRONG> (Thumb, 594 bytes, Stack size 136 bytes, usmart.o(i.usmart_exe))
+<P><STRONG><a name="[21]"></a>usmart_exe</STRONG> (Thumb, 594 bytes, Stack size 136 bytes, usmart.o(i.usmart_exe))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280 + Unknown Stack Size
 <LI>Call Chain = usmart_exe &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1554,8 +1548,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = usmart_get_fname
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
-<LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
-<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
 </UL>
 
 <P><STRONG><a name="[f4]"></a>usmart_get_fparam</STRONG> (Thumb, 696 bytes, Stack size 256 bytes, usmart_str.o(i.usmart_get_fparam))
@@ -1563,21 +1557,21 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_memclr4_10
 </UL>
-<BR>[Called By]<UL><LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
+<BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
 </UL>
 
 <P><STRONG><a name="[f5]"></a>usmart_get_parmpos</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, usmart_str.o(i.usmart_get_parmpos))
-<BR><BR>[Called By]<UL><LI><a href="#[19]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
+<BR><BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_exe
 </UL>
 
-<P><STRONG><a name="[17]"></a>usmart_init</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, usmart.o(i.usmart_init))
+<P><STRONG><a name="[1f]"></a>usmart_init</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, usmart.o(i.usmart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = usmart_init &rArr; MY_NVIC_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MY_NVIC_Init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
-<P><STRONG><a name="[1a]"></a>usmart_scan</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, usmart.o(i.usmart_scan))
+<P><STRONG><a name="[22]"></a>usmart_scan</STRONG> (Thumb, 102 bytes, Stack size 24 bytes, usmart.o(i.usmart_scan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240 + Unknown Stack Size
 <LI>Call Chain = usmart_scan &rArr; usmart_sys_cmd_exe &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -1597,7 +1591,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_strcmp
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_sys_cmd_exe
-<LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
+<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_cmd_rec
 </UL>
 
 <P><STRONG><a name="[f7]"></a>usmart_sys_cmd_exe</STRONG> (Thumb, 1488 bytes, Stack size 72 bytes, usmart.o(i.usmart_sys_cmd_exe))
@@ -1611,16 +1605,16 @@ Global Symbols
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_get_aparm
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
+<BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usmart_scan
 </UL>
 
-<P><STRONG><a name="[3]"></a>write_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, usmart.o(i.write_addr))
+<P><STRONG><a name="[b]"></a>write_addr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, usmart.o(i.write_addr))
 <BR>[Address Reference Count : 1]<UL><LI> usmart_config.o(.data)
 </UL>
 <P><STRONG><a name="[ef]"></a>__aeabi_d2f</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2f
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
 </UL>
 
 <P><STRONG><a name="[fb]"></a>_d2f</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f), UNUSED)
@@ -1765,7 +1759,7 @@ Global Symbols
 <P><STRONG><a name="[ee]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
 </UL>
 
 <P><STRONG><a name="[10c]"></a>_f2d</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d), UNUSED)
@@ -1813,9 +1807,9 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cfft_radix2_f32
 </UL>
-<BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
-<LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_General_init
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
 <P><STRONG><a name="[e3]"></a>get_img</STRONG> (Thumb, 214 bytes, Stack size 40 bytes, mytrack.o(i.get_img))
@@ -1823,11 +1817,11 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ReadPoint
 </UL>
-<BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
-<LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 
-<P><STRONG><a name="[1f]"></a>myTrack</STRONG> (Thumb, 1672 bytes, Stack size 56 bytes, mytrack.o(i.myTrack))
+<P><STRONG><a name="[8]"></a>myTrack</STRONG> (Thumb, 1672 bytes, Stack size 56 bytes, mytrack.o(i.myTrack))
 <BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = myTrack &rArr; myTrack_training &rArr; get_img &rArr; LCD_ReadPoint &rArr; LCD_SetCursor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DCMI_Restart
@@ -1836,31 +1830,31 @@ Local Symbols
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_mean_f32
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cmplx_mult_cmplx_f32
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cfft_radix2_f32
-<LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack_training
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_img
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fft2
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mytrack.o(.data)
 </UL>
-<P><STRONG><a name="[1d]"></a>myTrack_General_init</STRONG> (Thumb, 540 bytes, Stack size 56 bytes, mytrack.o(i.myTrack_General_init))
+<P><STRONG><a name="[6]"></a>myTrack_General_init</STRONG> (Thumb, 540 bytes, Stack size 56 bytes, mytrack.o(i.myTrack_General_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = myTrack_General_init &rArr; LCD_ShowString &rArr; LCD_ShowChar &rArr; LCD_Fast_DrawPoint
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cfft_radix2_init_f32
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fft2
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
 <LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_exp
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mytrack.o(.data)
 </UL>
-<P><STRONG><a name="[1e]"></a>myTrack_Rectreset</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, mytrack.o(i.myTrack_Rectreset))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = myTrack_Rectreset
+<P><STRONG><a name="[7]"></a>myTrack_Rectreset</STRONG> (Thumb, 82 bytes, Stack size 12 bytes, mytrack.o(i.myTrack_Rectreset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = myTrack_Rectreset
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mytrack.o(.data)
 </UL>
-<P><STRONG><a name="[20]"></a>myTrack_training</STRONG> (Thumb, 510 bytes, Stack size 48 bytes, mytrack.o(i.myTrack_training))
+<P><STRONG><a name="[9]"></a>myTrack_training</STRONG> (Thumb, 510 bytes, Stack size 48 bytes, mytrack.o(i.myTrack_training))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = myTrack_training &rArr; get_img &rArr; LCD_ReadPoint &rArr; LCD_SetCursor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_cmplx_mult_cmplx_f32
@@ -1868,11 +1862,11 @@ Local Symbols
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_img
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fft2
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
+<BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myTrack
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mytrack.o(.data)
 </UL>
-<P><STRONG><a name="[1c]"></a>rgbpreprocess</STRONG> (Thumb, 348 bytes, Stack size 32 bytes, mytrack.o(i.rgbpreprocess))
+<P><STRONG><a name="[5]"></a>rgbpreprocess</STRONG> (Thumb, 348 bytes, Stack size 32 bytes, mytrack.o(i.rgbpreprocess))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = rgbpreprocess &rArr; arm_mean_f32
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arm_std_f32

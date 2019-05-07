@@ -1,8 +1,8 @@
 #include "myTrack.h"
 #include "lcd.h"				//For getting pixel value from LCD 
-#include "dcmi.h"				//control image transmission
+#include "dcmi.h"				//Control image transmission
 #include "malloc.h" 		//Allocate memory
-#include "arm_math.h" 	//access stm32f4 dsp
+#include "arm_math.h" 	//Access stm32f4 dsp
 	
 float* mark = NULL;
 float* G = NULL;
@@ -18,7 +18,7 @@ float* gi = NULL;
 float* cache = NULL;
 rectangle Rect = {0,0,0,0,0};
 
-_mossetrack MOSSE_Tracker = {
+_tracker MOSSE_Tracker = {
 	myTrack_General_init,	//init
 	myTrack_Rectreset,		//window_set
 	myTrack,							//track
@@ -79,6 +79,7 @@ static void myTrack_init()
 
 	arm_cfft_radix2_init_f32(&ifft_xconf, Rect.width_x,1,1);
 	arm_cfft_radix2_init_f32(&ifft_yconf, Rect.width_y,1,1);
+	
 	//Allocate memory
 	G = (float*)mymalloc(SRAMEX, 2*Rect.width_x*Rect.width_y*sizeof(float));
 	Win = (float*)mymalloc(SRAMIN, Rect.width_x*Rect.width_y*sizeof(float));

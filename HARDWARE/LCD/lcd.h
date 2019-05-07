@@ -121,7 +121,7 @@ volatile	vu16 LCD_RAM;
 #define D2U_L2R  6 //从下到上,从左到右
 #define D2U_R2L  7 //从下到上,从右到左
 
-#define Horizon //image
+//#define Horizon //image
 #ifndef Horizon
 #define DFT_SCAN_DIR  L2R_U2D  //默认的扫描方向 
 #else

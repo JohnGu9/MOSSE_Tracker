@@ -13,13 +13,13 @@
 "..\obj\usart2.o"
 "..\obj\timer.o"
 "..\obj\sram.o"
+"..\DSP_LIB\arm_cortexM4lf_math.lib"
+"..\obj\math_helper.o"
+"..\obj\malloc.o"
+"..\obj\mytrack.o"
 "..\obj\usmart.o"
 "..\obj\usmart_config.o"
 "..\obj\usmart_str.o"
-"..\DSP_LIB\arm_cortexM4lf_math.lib"
-"..\obj\math_helper.o"
-"..\obj\mytrack.o"
-"..\obj\malloc.o"
 --strict --scatter "..\OBJ\TEST.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

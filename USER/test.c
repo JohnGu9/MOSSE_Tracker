@@ -12,7 +12,12 @@
 #include "malloc.h"
 #include "arm_math.h" 
 
-#define offset 6/10
+//#define Performance_Track
+
+#define offset 4/10
+u8 timeout;
+float time; 
+
 
 int main(void)
 {
@@ -20,12 +25,16 @@ int main(void)
 	my_mem_init(SRAMIN);		//初始化内部内存池
 	my_mem_init(SRAMEX);		//初始化外部内存池
 	my_mem_init(SRAMCCM);		//初始化CCM内存池	
-	Stm32_Clock_Init(378,8,2,7);//设置时钟,182Mhz 
+//	Stm32_Clock_Init(378,8,2,7);//设置时钟,182Mhz 
+	Stm32_Clock_Init(336,8,2,7);//设置时钟,168Mhz 
 	delay_init(189);			//延时初始化  
 	uart_init(84,115200);		//初始化串口波特率为115200 
 	LED_Init();					//初始化LED 
  	LCD_Init();					//LCD初始化  
- 	KEY_Init();					//按键初始化 
+ 	KEY_Init();					//按键初始化
+#ifdef performance
+	TIM3_Int_Init(65535,8400-1);//10Khz计数频率,最大计时6.5秒超出
+#endif	
  	POINT_COLOR=RED;//设置字体为红色 
 	
 	MOSSE_Tracker.init(	lcddev.width/2 - Window_width*Cell_side/2, 
@@ -51,13 +60,29 @@ int main(void)
 	delay_ms(1000);
 	rgb565(); 
 }
-
+inline void myLCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p)
+{         
+	u8 x0=x;
+	width+=x;
+	height+=y;
+    while((*p<='~')&&(*p>=' '))//判断是不是非法字符!
+    {       
+        if(x>=width){x=x0;y+=size;}
+        if(y>=height)break;//退出
+        LCD_ShowChar(x,y,*p,size,0);
+        x+=size/2;
+        p++;
+    }  
+}
 inline static void rgb565(void)
 { 
 	static u8 key;
 	static u16 default_local[2];
 	static int current_local[2];
-
+#ifdef Performance_Track
+	static unsigned char buf[20];
+#endif
+	
 	static u8 track_flag;
 	static u8 Hi_available;
 	track_flag = 0;
@@ -121,7 +146,12 @@ inline static void rgb565(void)
 			}
 			DCMI_Start();//重新开始传输
 		} 
-
+#ifdef Performance_Track
+//timer setup
+		TIM3->CNT=0;//重设TIM3定时器的计数器值
+		timeout=0;
+//timer setup
+	#endif
 		if(track_flag)
 		{
 			if(MOSSE_Tracker.track())//center
@@ -176,9 +206,17 @@ inline static void rgb565(void)
 				POINT_COLOR=GREEN; //change window color
 				goto tracked;
 			}
-		}
+		}	
 		tracked: 
-		DCMI_Pause();
+		DCMI_Pause();	
+#ifdef Performance_Track		
+//timer statistics time
+		time=TIM3->CNT+(u32)timeout*65536;
+		sprintf((char*)buf, "Time:%f\r\n",time);//打印帧率
+		myLCD_ShowString(30,50,600,font_size,font_size,buf);
+		delay_ms(500);		
+//timer statistics time		
+#endif
 		LCD_DrawRectangle(Rect.x, Rect.y, Rect.x+Rect.width_x*Cell_side, Rect.y+Rect.width_y*Cell_side);
 		LCD_DrawCross(Rect.x + Failure_Detection_Window_side*Cell_side, Rect.y + Failure_Detection_Window_side*Cell_side, 10);	//top_left
 		LCD_DrawCross(Rect.x+Rect.width_x*Cell_side - Failure_Detection_Window_side*Cell_side, Rect.y + Failure_Detection_Window_side*Cell_side, 10);	//top_right

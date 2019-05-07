@@ -1,6 +1,5 @@
 ..\obj\mytrack.o: ..\myTrack\myTrack.c
 ..\obj\mytrack.o: ..\myTrack\myTrack.h
-..\obj\mytrack.o: ..\SYSTEM\sys\sys.h
 ..\obj\mytrack.o: ..\SYSTEM\sys\stm32f4xx.h
 ..\obj\mytrack.o: ..\SYSTEM\sys\core_cm4.h
 ..\obj\mytrack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -8,11 +7,12 @@
 ..\obj\mytrack.o: ..\SYSTEM\sys\core_cmFunc.h
 ..\obj\mytrack.o: ..\SYSTEM\sys\core_cm4_simd.h
 ..\obj\mytrack.o: ..\SYSTEM\sys\system_stm32f4xx.h
-..\obj\mytrack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-..\obj\mytrack.o: ..\DSP_LIB\Include\arm_math.h
-..\obj\mytrack.o: ..\DSP_LIB\Include\core_cm4.h
-..\obj\mytrack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\mytrack.o: ..\HARDWARE\LCD\lcd.h
+..\obj\mytrack.o: ..\SYSTEM\sys\sys.h
 ..\obj\mytrack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\obj\mytrack.o: ..\HARDWARE\DCMI\dcmi.h
 ..\obj\mytrack.o: ..\MALLOC\malloc.h
+..\obj\mytrack.o: ..\DSP_LIB\Include\arm_math.h
+..\obj\mytrack.o: ..\DSP_LIB\Include\core_cm4.h
+..\obj\mytrack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\mytrack.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

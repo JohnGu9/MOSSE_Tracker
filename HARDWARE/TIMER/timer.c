@@ -21,6 +21,7 @@
 //V1.3 20140506
 //新增TIM9_CH2_PWM_Init函数,用于PWM DAC实验
 ////////////////////////////////////////////////////////////////////////////////// 	
+extern u8 timeout;//溢出次数
 
 extern u8 ov_frame;
 extern volatile u16 jpeg_data_len;
@@ -29,9 +30,10 @@ void TIM3_IRQHandler(void)
 { 		    		  			    
 	if(TIM3->SR&0X0001)//溢出中断
 	{
-		printf("frame:%d\r\n",ov_frame);//打印帧率
-		printf("jpeg_data_len:%d\r\n",jpeg_data_len*4);//打印帧率
-		ov_frame=0;
+//		printf("frame:%d\r\n",ov_frame);//打印帧率
+//		printf("jpeg_data_len:%d\r\n",jpeg_data_len*4);//打印帧率
+//		ov_frame=0;
+				timeout++;
 	}				   
 	TIM3->SR&=~(1<<0);//清除中断标志位 	    
 }

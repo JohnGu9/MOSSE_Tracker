@@ -1,20 +1,18 @@
 #ifndef __MYTRACK_H
 #define __MYTRACK_H
-#include "sys.h"
-#include "math.h" 
-#include "arm_math.h" 
+#include "stm32f4xx.h" 
 
 #define ONLINE_TRAIN	//online train switch
 
 #define Sigma 8.f	// Sigma = 2*sigma^2 
 #define Window_width 64
 #define Window_height 64
-#define Cell_side 3
+#define Cell_side 2
 #define Update_rate 0.125f
 #define Failure_Detection_Window_side 11
 #define PSR_Threshold 7.6f
 #define PSR_Train_Threshold 24.f
-#define font_size 24
+#define font_size 16
 
 extern float* mark;
 extern float* G;
@@ -25,7 +23,7 @@ extern float* Fi;
 extern float* Fi_conj;
 extern float* Ai;
 extern float* Bi;
-extern float* Hi;
+extern float* Hi; 
 extern float* gi;
 extern float* cache;
 
@@ -44,8 +42,8 @@ typedef struct {
  void (*window_set)(int x, int y);
  int  (*track)(void);
  void (*train)(rectangle rect);
-}_mossetrack;
-extern _mossetrack MOSSE_Tracker;
+}_tracker;
+extern _tracker MOSSE_Tracker;
 
 
 //Tracker Interface
